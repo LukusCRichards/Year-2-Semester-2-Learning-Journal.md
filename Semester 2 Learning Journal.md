@@ -6,5 +6,7 @@ I had a small problem with making the minimap camera show the plane in the scene
 
 I also had some confusions with writing the movement script for the character, which is mostly because I have never done it without the character controller and I never tied to do it like I did in the 2D games I made. I realised that the reason why I was struggling to write the movement for the 3D character was because I never wrote wrote the movements without using the Character Controller Component and I thought I could succeed without it.
 
+When writing the script that would allow the script to manage the minimap camera's ability to rotate along with the character, I encountered an error with how it worked. It only worked on the same script and would not work if it is part of a different script. I do not know what I did wrong with the script, but I think it might have something to do with how I called the functions from the other scripts as I might have written it wrong.
+
 ## Thursday 18th February 2021
 
