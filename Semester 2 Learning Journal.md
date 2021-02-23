@@ -8,5 +8,6 @@ I also had some confusions with writing the movement script for the character, w
 
 When writing the script that would allow the script to manage the minimap camera's ability to rotate along with the character, I encountered an error with how it worked. It only worked on the same script and would not work if it is part of a different script. I do not know what I did wrong with the script, but I think it might have something to do with how I called the functions from the other scripts as I might have written it wrong and got confused on how I did it for my other assignments that involved using code.
 
-## Thursday 18th February 2021
+## Tuesday 23rd February 2021
 
+I encountered a problem with why when the pistol runs out of ammo, it stays in the reload position instead of returning to its idle position. I thought it was because I missed something in the videos I watched, and it turned out that I did miss something: I had to set the booleon for pistol the animation back to false to return to the idle position because if I did not, it would stay at the idle position and never change after the reload animation is set to true.
