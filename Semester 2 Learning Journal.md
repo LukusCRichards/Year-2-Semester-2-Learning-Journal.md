@@ -23,3 +23,6 @@ I think the best way I can fix this is to utilise the minimap camera script and 
 ## Saturday 27th February 2021
 
 I tried to re-write the script to make two that work together, but it still didn't work correctly even though I know I wrote the methods correctly and I successfuly referenced them in the other scripts without encountering any errors. I no longer think this is because of how I wrote the code in terms of the methods, but I now think it is either because some scripts can't handle certain methods begin referenced in other scripts, such as the transform data, or because I need to use certain void functions which I don't now which one will work.
+
+## Tuesday 2nd March 2021
+
