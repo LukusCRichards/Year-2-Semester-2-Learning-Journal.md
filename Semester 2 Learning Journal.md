@@ -26,3 +26,4 @@ I tried to re-write the script to make two that work together, but it still didn
 
 ## Tuesday 2nd March 2021
 
+As I was writing the script for the sniper scope, I had a slight confusion with the code as when I set isScoped to true, the game objects that were supposed to be visible were not showing even though I wrote the script correctly while watching the video that showed how to write it. When I looked at the gameobject, I realized that the reason it was not showing is because the set layer of the game object was set in a way so it would not stay visible when zoomed in.
