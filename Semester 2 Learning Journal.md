@@ -27,3 +27,9 @@ I tried to re-write the script to make two that work together, but it still didn
 ## Tuesday 2nd March 2021
 
 As I was writing the script for the sniper scope, I had a slight confusion with the code as when I set isScoped to true, the game objects that were supposed to be visible were not showing even though I wrote the script correctly while watching the video that showed how to write it. When I looked at the gameobject, I realized that the reason it was not showing is because the set layer of the game object was set in a way so it would not stay visible when zoomed in.
+
+## Tuesday 9th March 2021
+
+When I was writing the script for the Third Person Camer & Player Controller script, I came accross an error with the way the camera rotated, as whenever I moved the mouse up, it moved down and vise versa. I assumed that it had something to do with how I wrote the script handled the values of the rotation, and I was correct as I wrote a plus (+) where I should've wrote a minus (-).
+
+I encountered another error while nearing the end of the script that was supposed to make sure that whatever blocked the camera's view, or collided with it, would turn off its mesh so it would not look like it's visible: when nothing was obstructing the camera, there was a slight delay before the mesh turned back on. I thought this was because I wrote a delay somewhere or something else that I had not clue, but now I think it might be because of the performance of my laptop as the mesh eventually turned back on.
