@@ -30,8 +30,15 @@ As I was writing the script for the sniper scope, I had a slight confusion with 
 
 ## Tuesday 9th March 2021
 
-When I was writing the script for the Third Person Camer & Player Controller script, I came accross an error with the way the camera rotated, as whenever I moved the mouse up, it moved down and vise versa. I assumed that it had something to do with how I wrote the script handled the values of the rotation, and I was correct as I wrote a plus (+) where I should've wrote a minus (-).
+When I was writing the script for the Third Person Camera & Player Controller script, I came accross an error with the way the camera rotated, as whenever I moved the mouse up, it moved down and vise versa. I assumed that it had something to do with how I wrote the script handled the values of the rotation, and I was correct as I wrote a plus (+) where I should've wrote a minus (-).
 
 I encountered another error while nearing the end of the script that was supposed to make sure that whatever blocked the camera's view, or collided with it, would turn off its mesh so it would not look like it's visible: when nothing was obstructing the camera, there was a slight delay before the mesh turned back on. I thought this was because I wrote a delay somewhere or something else that I had not clue, but now I think it might be because of the performance of my laptop as the mesh eventually turned back on.
 
-At the very end, encountered a simimlar error that occurd when I tried to get the two scripts to work together in the Minimap Package: the camera would not longer rotate with the mouse when I tried to find a way to get another script to make the camera look at the desired location on the player, as well get another script to handle the mouse rotation. I though it happened for the same reason why the minimap script didn't work: the way I wrote the functions in each script to make sure that they worked together, but now I think it's because the scipts can get confused easily when I try to reference a certain function from another script, as I managed to get a slight result when making a new script component that mainly used its own valuse.
+At the very end, encountered a simimlar error that occurd when I tried to get the two scripts to work together in the Minimap Package: the camera would not longer rotate with the mouse when I tried to find a way to get another script to make the camera look at the desired location on the player, as well get another script to handle the mouse rotation.
+
+I though it happened for the same reason why the minimap script didn't work: the way I wrote the functions in each script to make sure that they worked together, but now I think it's because the scipts can get confused easily when I try to reference a certain function from another script, as I managed to get a slight result when making a new script component that mainly used its own valuse.
+
+## Wednesday 10th March 2021
+
+After succeeding in making another script for the Weapon Scope Package, I now think that the real reason why I was not able get two scripts to work together in the Minimap Package or the Third Person Camera & Player Controller Package is because I did not reference then in either a Start function or an Awake function.
+
