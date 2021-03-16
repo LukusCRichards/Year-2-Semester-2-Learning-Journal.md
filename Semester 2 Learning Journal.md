@@ -48,7 +48,7 @@ After creating an Awake function in the Minimap Package, it turned out that the 
 
 ## Monday 15th March 2021
 
-
+When I first started writing the code for the First Person Camera & Movement script, I encountered an error with the camera when the game was playing: the rotation went off and for some reason even though I wrote the script correctly. I thought the problem was the script as the videos I watched to make a First Person movement script were different from the Third Person Movement scripts, but after I finished writing the script which was similar to the previous ones, I realise that it could have been where the parented camera was positioned on the character as I moved it out a bit.
 
 ## Tuesday 16th March 2021
 
