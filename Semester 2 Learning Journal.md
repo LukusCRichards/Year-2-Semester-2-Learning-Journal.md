@@ -45,3 +45,10 @@ After succeeding in making another script for the Weapon Scope Package, I now th
 ## Saturday 13th March 2021
 
 After creating an Awake function in the Minimap Package, it turned out that the reason why I could not get two script to work together was becaue I did not reference it in an Awake function, because without it, it does not work. That is also the reason why it did not work for the Third Person Camera & Player Controller as I did not create an Awake method.
+
+## Monday 15th March 2021
+
+
+
+## Tuesday 16th March 2021
+
