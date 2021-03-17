@@ -54,3 +54,8 @@ I thought the problem was the script as the videos I watched to make a First Per
 
 ## Tuesday 16th March 2021
 
+As I applied the packages I made into one project for the small game I planned on making, I encountered a few errors. One of them involved the weapon no longer being able to fire when the weapon is empty and the second one involves the weapon not being able to do damage while using a weapon scope.
+
+I thought the problem for the first error was because was because of the zoom in, as the camera that is used to cause damage is not longer used when zoomed in. A while later, I realised that the real reason was because of the animation conditions in the script, because before the weapon reloads, it looks for the animation before finishing the reload. Commenting it out fixed it, but now it no longer plays the animation.
+
+I thought the problem for the second error was because it had nothing to refer to, and that I needed to create a new Camera variable for the Gun script to use, but this did not work as it still did not deal damage.
