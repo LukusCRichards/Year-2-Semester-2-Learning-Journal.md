@@ -68,4 +68,4 @@ As I was trying to figure out why the Gun script no longer fired when zoomed in,
 
 I encountered a problem coding the scoring system for my small game: the methods I used for the previous games I made were not working and I did not know why, even though I knew I wrote them correctly. I thought it was because of the way I referenced the script that handles the scoring as it did not work for either way I ordered the script and one of the ways I ordered them stopped the objects from being destroyed when their health reached 0.
 
-I then realised that it was due to the way I referenced it as I referenced the other scripts in the Awake method, but that didn't work. When I just referenced it as a public void method I made and referenced it straight in the destroy method, the points started going up without any issues.
+I then realised that it was due to the way I wrote the reference, as I referenced the other scripts in the Awake method, but that didn't work. When I made the public void method and referenced it straight in the destroy method above the script that destroys the game object, the points started going up and the objects were destroyed without any issues.
