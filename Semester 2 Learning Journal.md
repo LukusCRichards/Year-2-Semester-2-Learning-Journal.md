@@ -62,5 +62,7 @@ I thought the problem for the second error was because it had nothing to refer t
 
 ## Tuesday 23rd March 2021
 
-As I was trying to figure out why the Gun script no longer fired when zoomed in, I figured out the reason why it didn't work: the objects of the weapon were blocking the Raycasts through their colliders. It turned out that Raycasts will interact with anything that has a collider component, whether it is set as a trigger or not. So the only way to make sure that it weapon stopped blocking the Raycast was to either remove or disable their colliders.
+As I was trying to figure out why the Gun script no longer fired when zoomed in, I figured out the reason why it didn't work: the objects of the weapon were blocking the Raycasts through their colliders. It turned out that Raycasts will interact with anything that has a collider component, whether it is set as a trigger or not. So the only way to make sure that it stopped blocking the Raycast was to either remove or disable the colliders.
+
+## Tuesday 20th April 2021
 
