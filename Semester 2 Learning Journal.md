@@ -69,3 +69,15 @@ As I was trying to figure out why the Gun script no longer fired when zoomed in,
 I encountered a problem coding the scoring system for my small game: the methods I used for the previous games I made were not working and I did not know why, even though I knew I wrote them correctly. I thought it was because of the way I referenced the script that handles the scoring as it did not work for either way I ordered the script and one of the ways I ordered them stopped the objects from being destroyed when their health reached 0.
 
 I then realised that it was due to the way I wrote the reference, as I referenced the other scripts in the Awake method, but that didn't work. When I made the public void method and referenced it straight in the destroy method above the script that destroys the game object, the points started going up and the objects were destroyed without any issues.
+
+## Tuesday 27th April 2021
+
+I struggled with editing the script so it shows the amount of targets there are in the game for the max amount of targets on the UI Score canvas: the method I tried to write it in came up with errors as I tried to write it as an array and define the calculation of the maxTarget int variable on the same line as the variable itself.
+
+    int maxTarget = targets.Length
+
+I tried changing the array to a public list of GameObjects and write the maxTarget variable as targets.Count as I thought that was the problem, but the problem persisted. I managed to fix it by defining the maxTarget int variable in the start function as there were not errors when I did this and whenever there is any amount of GameObjects in the list, it displays the amount in the UI Score canvas.
+I believe that the reason it wasn't working is because not all variable can handle a definition, 
+
+## Tuesday 4th May 2021
+
