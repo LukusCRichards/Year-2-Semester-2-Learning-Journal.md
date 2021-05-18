@@ -79,5 +79,6 @@ I struggled with editing the script so it shows the amount of targets there are 
 I tried changing the array to a public list of GameObjects and write the maxTarget variable as targets.Count as I thought that was the problem, but the problem persisted. I managed to fix it by defining the maxTarget int variable in the start function as there were not errors when I did this and whenever there is any amount of GameObjects in the list, it displays the amount in the UI Score canvas.
 I believe that the reason it wasn't working is because not all variable can handle a definition, 
 
-## Tuesday 4th May 2021
+## Sunday 17th May 2021
 
+I encountered a small error with my game as I play tested it today: the character no longer jumped when I pressed the space bar. At first I thought for some reason it somehow had somthing to do with the new code I wrote for the UI elements to be turned off, but then I realised that it was the ground controller gameObject not touching the ground as I accidentally moved it upwards as the parent for my whole character was off and I wanted to snap it to the centre.
